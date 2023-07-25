@@ -1,19 +1,11 @@
-UserPosJava.txt
+BeanUserFone.txt
 package model;
 
-public class UserPosJava {
+public class BeanUserFone {
 
-	private Long id;
 	private String nome;
+	private String numero;
 	private String email;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public String getNome() {
 		return nome;
@@ -21,6 +13,14 @@ public class UserPosJava {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
 	}
 
 	public String getEmail() {
@@ -33,9 +33,7 @@ public class UserPosJava {
 
 	@Override
 	public String toString() {
-		return "UserPosJava [id=" + id + ", nome=" + nome + ", email=" + email + "]";
+		return "BeanUserFone [nome=" + nome + ", numero=" + numero + ", email=" + email + "]";
 	}
-	
-	
 
 }
